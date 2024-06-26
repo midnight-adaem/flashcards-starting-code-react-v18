@@ -15,6 +15,7 @@ export const topicsSlice = createSlice({
             state.topics[topicId] = newTopic;
         },
     },
+    // TODO: replace with builder syntax
     extraReducers: {
         [addQuiz]: (state, action) => {
             const { topicId, id } = action.payload;
